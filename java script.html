@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>java script</title>
+    <script src="./java script.js"></script>
+</head>
+<body>
+  <!-- <h2>JavaScript Function Sequence</h2>
+
+  <p>JavaScript functions are executed in the sequence they are called.</p>
+  
+  <p id="demo"></p>
+  <h1>math function</h1>
+  <p>to calculate the function and get result:</p>
+  <p id="demo"></p> -->
+  <h3>JavaScript promise</h3>
+  <p id="demo"></p>
+  <script>
+//       var a="i learn java script";
+//       document.write(a);
+
+//       var b="this is another example";
+//       document.write(b);
+
+//   function myDisplayer(some) {
+//     document.getElementById("demo").innerHTML = some;
+//   }
+  
+//   function myFirst() {
+//     myDisplayer("Hello");
+//   }
+  
+//   function mySecond() {
+//     myDisplayer("Goodbye");
+//   }
+  
+//   myFirst();
+//   mySecond();
+// function first(something){
+//   document.getElementById("demo").innerHTML=something;
+// }
+// function myCalculater(num1,num2,callback){
+//   let sum=num1+num2;
+//   callback(sum);
+// }
+// myCalculater(10,20,first);
+
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+
+
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+  </script>
+</body>
+</html>

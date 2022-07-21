@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js">
+    </script>
+</head>
+
+<body ng-app>
+    <h1>AngularJS Date Filter</h1>
+    <div ng-init="person.DOB = ">
+        Default date: {{person.DOB| date}} <br />
+        Medium date: {{person.DOB| date:'medium'}} <br />
+        Full date: {{person.DOB | date:'fullDate'}} <br />
+        Year: {{person.DOB | date:'yyyy'}} <br />
+    </div>
+</body>
+
+</html>

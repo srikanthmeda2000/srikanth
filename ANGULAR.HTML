@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    <script src="DemoAngular.js"></script>
+    <title>modules</title>
+</head>
+
+<body >
+    <h1>using controllers in modules</h1>
+    <div ng-app="DemoAngular" ng-controller="DemoController">
+        vowels List :
+        <button ng-click="ch('A')">A</button>
+        <button ng-click="ch('E')">E</button>
+        <button ng-click="ch('I')">I</button>
+        <button ng-click="ch('O')">O</button>
+        <button ng-click="ch('U')">U</button>
+
+        <p>{{choice}}</p>
+
+        vowels List :
+        <select ng-options="option for option in list" ng-model="mychoice" ng-change="c()"></select>
+
+        <p>{{choice}}</p>
+
+    </div>
+</body>
+
+</html>

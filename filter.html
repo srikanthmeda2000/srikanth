@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller("namesCtrl", function ($scope) {
+            $scope.friends = [
+                { name: "Karl", age: 27, city: "Bangalore" },
+                { name: "Lewis", age: 55, city: "Newyork" },
+                { name: "Adarsh", age: 20, city: "London" },
+                { name: "John", age: 21, city: "Newyork" },
+                { name: "David", age: 20, city: "Chenai" },
+                { name: "Miller", age: 32, city: "Paris" }
+            ];
+        });  
+    </script>
+</head>
+
+
+<div ng-app="myApp" ng-controller="namesCtrl">
+    <p>Filtering input:</p>
+    <p>
+        <input type="text" ng-model="test">
+    </p>
+    <ul>
+        <li ng-repeat="x in friends | filter:test | orderBy:'city'">
+            {{ (x.name | uppercase) + ', ' + x.age +','+x.city }}
+        </li>
+    </ul>
+</div>
+
+</html>

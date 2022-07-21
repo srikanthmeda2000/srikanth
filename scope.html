@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        AngularJS | Scope
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+</head>
+
+<body>
+
+    <div ng-app="sri" ng-controller="control" align="center">
+
+        <h1 style="color:green;">{{organization}}</h1>
+        <p>A Computer Science Portal</p>
+    </div>
+
+    <script>
+        var geeks = angular.module('sri', []);
+        geeks.controller('control', function ($scope) {
+            $scope.organization = "nendrasys";
+        });
+    </script>
+
+</body>
+
+</html>

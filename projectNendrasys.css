@@ -1,0 +1,151 @@
+#caption{
+    padding: 15px;
+    background-color: azure;  
+    
+}
+.caption-menu{
+  text-decoration: none;
+  color: black;
+}
+#s{  
+    padding-left: 20px;
+    margin-right: 0px;
+    display: inline;
+    background-color: rgba(253, 253, 253, 0.219); 
+    font-size: 20px;
+    border-radius: 10px; 
+    text-decoration: none; 
+  }
+ #md{
+   padding-left: 40%;
+   font-weight: 500;
+   line-height: 1.4;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   font-style: italic;
+   color: white;
+ }
+ #a{
+   background-image: url("../srikanth/project/images/nendrasys/technology.jpg");
+   min-height: 600px;
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-left: 40%;
+ }
+ #a1{
+   position: absolute;
+   left: 0;
+   top: 25%;
+   width: 100%;
+   text-align: center;
+   color: black;
+ }
+     #b{
+      background-image: url("../srikanth/project/images/nendrasys/Information.jpg");
+      min-height: 600px;
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 40%;
+     }
+     #b1{
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      color: black;
+     }
+     #md1{
+      padding-left: 40%;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-style: italic;
+      color: white;
+
+     }
+     #c{
+      background-image: url("../srikanth/project/images/nendrasys/img.jpg");
+      min-height: 600px;
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 40%;
+     }
+     #c1{
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      color: black;
+     }
+     #md2{
+      padding-left: 40%;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-style: italic;
+     }
+     #d{  
+        background-image:url("../srikanth/project/images/nendrasys/veritis.jpg");
+        min-height: 600px;
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 40%;
+     }
+     #d1{
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      color: black;
+     }
+    #md3{
+       color: rgb(255, 255, 255);
+       font-style: italic;
+       font-weight: 500;
+       line-height: 1.4;
+       margin-top: 25px;
+       margin-bottom: 25px;
+     }
+     .carousel-item {
+      font-size: 25px; 
+      margin: 10px;
+      padding: 20px;
+      background-color:black;
+      width: 100px;
+      height: 550px;
+      color: white;
+     }
+     .i{
+      text-decoration: none;
+      font-size:medium;
+      color: black;
+     }
+     .indu{
+      font-size: 15px;
+     }
+     .md4{
+      text-decoration: none;
+      color: white;
+     }
+     .md5{
+      background-color:black;
+      color: white;
+      padding-top: 30px;
+     }
+     

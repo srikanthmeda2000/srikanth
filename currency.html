@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+</head>
+
+<body>
+    <div ng-app="app1" ng-controller="costCtrl">
+        <h2>Price: {{ price | currency }}</h2>
+    </div>
+    <script>
+        var app = angular.module("app1", []);
+        app.controller("costCtrl", function ($scope) {
+            $scope.price =120;
+        });
+    </script>
+    <p>This filter is used to convert a number into a currency format.
+        When no currency format is implemented, the currency filter uses the local currency format.</p>
+</body>
+
+</html>

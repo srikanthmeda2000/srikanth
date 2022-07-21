@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+</head>
+
+<body>
+    <div ng-app="app1" ng-controller="sizeCtrl">
+        <p>Displays only the first 3 cars because limit is 3 (positive).</p>
+        <ul>
+            <li ng-repeat="x in cars | limitTo :3">{{x}}</li>
+        </ul>
+        <p>Displays only the last 3 cars because limit is -3 (negative).</p>
+        <ul>
+            <li ng-repeat="x in cars | limitTo : -4">{{x}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = angular.module("app1", []);
+        app.controller("sizeCtrl", function ($scope) {
+            $scope.cars = ["Alto", "Breeza", "nano", "benz",
+                "ciaz", "tata", "Fortuner", "Verna"];
+        });
+    </script>
+</body>
+
+</html>

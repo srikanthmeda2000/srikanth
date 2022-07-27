@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="shopping.js"></script>
+    <link rel="stylesheet" href="shopping.css">
+
+</head>
+
+<body ng-app="checkOff">
+    <header>
+        <h1>check off</h1>
+    </header>
+    <section class="section-1">
+        <div class="to-buy list" ng-controller="toBuyController">
+            <label><strong>To Buy</strong></label>
+            <ul class="items-list">
+                <li ng-repeat="toBuy.items">
+                    <div>Buy {{item.quantity}} {{item.name}}</div>
+                    <button class="button" ng-click="toBuy.moveItem($index)">Bought</button>
+                </li>
+            </ul>
+            <div class="message" ng-if="!toBuy.items.length">
+                Everything is bought!
+            </div>
+        </div>
+        <div class="already-bought list" ng-controller="alreadyBoughtController">
+            <label><strong>already Buy</strong></label>
+            <ul class="items-list">
+                <li ng-repeat="item in alreadyBought.items">
+                    <div>bought {{item.quantity}} {{item.name}}</div>
+
+                </li>
+            </ul>
+            <div class="message" ng-hide="alreadyBought.items.length">
+                no think is bought!
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+h3{
+    text-align: center;
+}
+.container{
+    background-image:url(./project/images/nendrasys/stock.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}   
+body{
+    font-weight: bold;
+}

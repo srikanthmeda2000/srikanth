@@ -6,7 +6,7 @@ app.controller("searchController", function ($scope) {
       id: 1,
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
-      quntity: 5,
+      quntity: 1,
       Image: '../assignment3/shirts.jpg',
       price: '$550',
     },
@@ -15,6 +15,7 @@ app.controller("searchController", function ($scope) {
       id: 2,
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
+      quntity: 1,
       Image: '../assignment3/sh.png',
       price: '$500',
     },
@@ -23,6 +24,7 @@ app.controller("searchController", function ($scope) {
       id: 3,
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
+      quntity: 1,
       Image: '../assignment3/41QRuRZCAZL.jpg',
       price: '$350',
     },
@@ -31,6 +33,7 @@ app.controller("searchController", function ($scope) {
       id: 4,
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
+      quntity: 1,
       Image: '../assignment3/shirts1.jpg',
       price: '$300',
     },
@@ -39,6 +42,7 @@ app.controller("searchController", function ($scope) {
       id: 5,
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
+      quntity: 1,
       Image: '../assignment3/shirts2.jpg',
       price: '$250',
     },
@@ -47,6 +51,7 @@ app.controller("searchController", function ($scope) {
       id: 6,
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
+      quntity: 1,
       Image: '../assignment3/shirts3.jpg',
       price: '$400',
     },
@@ -55,6 +60,7 @@ app.controller("searchController", function ($scope) {
       id: 7,
       name: 'pants',
       desc: 'Designed for wildlife explorations in dry weather. Trousers offering durability thanks to the solid',
+      quntity: 1,
       Image: '../assignment3/pants.jpg',
       price: '$400',
     },
@@ -63,6 +69,7 @@ app.controller("searchController", function ($scope) {
       id: 8,
       name: 'Tshirts',
       desc: ' Due to monitor settings, monitor pixel definitions, we cannot guarantee that the color of the product.',
+      quntity: 1,
       Image: '../assignment3/tshirt.jpg',
       price: '$400',
     },
@@ -71,6 +78,7 @@ app.controller("searchController", function ($scope) {
       id: 9,
       name: 'shoes',
       desc: 'Each feature of the FLYBOLT, from the aerodynamic shape profile to the premium Rydefoam cushioning',
+      quntity: 1,
       Image: '../assignment3/shopping.png',
       price: '$400',
     },
@@ -79,6 +87,7 @@ app.controller("searchController", function ($scope) {
       id: 10,
       name: 'shoes',
       desc: 'Each feature of the FLYBOLT, from the aerodynamic shape profile to the premium Rydefoam cushioning',
+      quntity: 1,
       Image: '../assignment3/shopping (1).png',
       price: '$400',
     },
@@ -87,6 +96,7 @@ app.controller("searchController", function ($scope) {
       id: 11,
       name: 'shirts',
       desc: 'Due to monitor settings, monitor pixel definitions, we cannot guarantee that the color of the product.',
+      quntity: 1,
       Image: '../assignment3/download.jpg',
       price: '$400',
     },
@@ -95,6 +105,7 @@ app.controller("searchController", function ($scope) {
       id: 12,
       name: 'shoes',
       desc: 'Each feature of the FLYBOLT, from the aerodynamic shape profile to the premium Rydefoam cushioning',
+      quntity: 1,
       Image: '../assignment3/shopping (2).png',
       price: '$400',
     },
@@ -114,14 +125,9 @@ app.controller("searchController", function ($scope) {
 
   }
 
-  $scope.total = 0;
-  $scope.setTotals = function (cart) {
-    if (cart) {
-      $scope.total += cart.price;
-      console.log($scope.total)
-    }
-
-  }
+  $scope.getCost = function(cart) {
+    return cart.quntity *price;
+  };
 
   $scope.remove = function (cart) {
     if (cart) {

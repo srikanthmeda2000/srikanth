@@ -25,22 +25,22 @@
             <hr>
             <div class=" row items">
                 <div class="col-md-7 ">
-                    <div class="row"> 
-                        <div class="col-md-4 " ng-repeat="item in searchItems | filter :searchText  | orderBy:'section'">
-                            <div >
+                    <div class="row">
+                        <div class="col-md-4 "
+                            ng-repeat="item in searchItems | filter :searchText  | orderBy:'section'">
+                            <div>
                                 <div class="card" ng-show="isVisible">
                                     <img ng-click="cart" ng-src="{{item.Image}}" alt="image">
                                     <h5>{{item.name}}</h5>
                                     <p>{{item.desc}}</p>
                                     <h5>{{item.price}}</h5>
-                                    <p>{{ item.qty * item.price | currency }}</p>
                                     <button class=" btn btn-primary " ng-click="store(item)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
-                </div>
+
+                </div>  
                 <div class="col-md-5">
                     <h2>Cart :</h2>
                     <div ng-show="isVisible" ng-init="setTotals(cart)" ng-repeat="cart in foundList">
@@ -50,10 +50,8 @@
                                 <h6 class="name_price">{{cart.name}} &nbsp; &nbsp; </h6>
                                 <p>{{cart.desc}}</p>
                                 <h6>{{cart.price}}</h6>
-                                <span>{{ cart.quntity + ' x ' + cart.description + ' = ' + (getCost(cart)) }}</span>
                                 <button class="btn-cart btn-danger" ng-click="remove(cart)">Remove</button>
                             </div>
-                            <h3>Total: {{ getTotal() | currency }}</h3>
                         </div>
                     </div>
                 </div>

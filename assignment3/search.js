@@ -125,9 +125,7 @@ app.controller("searchController", function ($scope) {
 
   }
 
-  $scope.getCost = function(cart) {
-    return cart.quntity *price;
-  };
+
 
   $scope.remove = function (cart) {
     if (cart) {

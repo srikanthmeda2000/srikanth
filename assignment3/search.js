@@ -7,7 +7,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
       quntity: 1,
-      Image: '../assignment3/shirts.jpg',
+      Image: '../assignment3/images/shirts.jpg',
       price: '$550',
     },
     {
@@ -16,7 +16,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
       quntity: 1,
-      Image: '../assignment3/sh.png',
+      Image: '../assignment3/images/sh.png',
       price: '$500',
     },
     {
@@ -25,7 +25,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
       quntity: 1,
-      Image: '../assignment3/41QRuRZCAZL.jpg',
+      Image: '../assignment3/images/41QRuRZCAZL.jpg',
       price: '$350',
     },
     {
@@ -34,7 +34,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
       quntity: 1,
-      Image: '../assignment3/shirts1.jpg',
+      Image: '../assignment3/images/shirts1.jpg',
       price: '$300',
     },
     {
@@ -43,7 +43,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
       quntity: 1,
-      Image: '../assignment3/shirts2.jpg',
+      Image: '../assignment3/images/shirts2.jpg',
       price: '$250',
     },
     {
@@ -52,7 +52,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Mens double-breasted fake two-piece long-sleeved shirt',
       quntity: 1,
-      Image: '../assignment3/shirts3.jpg',
+      Image: '../assignment3/images/shirts3.jpg',
       price: '$400',
     },
     {
@@ -61,7 +61,7 @@ app.controller("searchController", function ($scope) {
       name: 'pants',
       desc: 'Designed for wildlife explorations in dry weather. Trousers offering durability thanks to the solid',
       quntity: 1,
-      Image: '../assignment3/pants.jpg',
+      Image: '../assignment3/images/pants.jpg',
       price: '$400',
     },
     {
@@ -70,7 +70,7 @@ app.controller("searchController", function ($scope) {
       name: 'Tshirts',
       desc: ' Due to monitor settings, monitor pixel definitions, we cannot guarantee that the color of the product.',
       quntity: 1,
-      Image: '../assignment3/tshirt.jpg',
+      Image: '../assignment3/images/tshirt.jpg',
       price: '$400',
     },
     {
@@ -79,7 +79,7 @@ app.controller("searchController", function ($scope) {
       name: 'shoes',
       desc: 'Each feature of the FLYBOLT, from the aerodynamic shape profile to the premium Rydefoam cushioning',
       quntity: 1,
-      Image: '../assignment3/shopping.png',
+      Image: '../assignment3/images/shopping.png',
       price: '$400',
     },
     {
@@ -88,7 +88,7 @@ app.controller("searchController", function ($scope) {
       name: 'shoes',
       desc: 'Each feature of the FLYBOLT, from the aerodynamic shape profile to the premium Rydefoam cushioning',
       quntity: 1,
-      Image: '../assignment3/shopping (1).png',
+      Image: '../assignment3/images/shopping (1).png',
       price: '$400',
     },
     {
@@ -97,7 +97,7 @@ app.controller("searchController", function ($scope) {
       name: 'shirts',
       desc: 'Due to monitor settings, monitor pixel definitions, we cannot guarantee that the color of the product.',
       quntity: 1,
-      Image: '../assignment3/download.jpg',
+      Image: '../assignment3/images/download.jpg',
       price: '$400',
     },
     {
@@ -106,7 +106,7 @@ app.controller("searchController", function ($scope) {
       name: 'shoes',
       desc: 'Each feature of the FLYBOLT, from the aerodynamic shape profile to the premium Rydefoam cushioning',
       quntity: 1,
-      Image: '../assignment3/shopping (2).png',
+      Image: '../assignment3/images/shopping (2).png',
       price: '$400',
     },
   ]
